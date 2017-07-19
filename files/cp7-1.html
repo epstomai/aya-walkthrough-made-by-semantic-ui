@@ -1,26 +1,36 @@
+<script>
+  $(function() {
+
+    $("#cp7-1_content").load("files/cp7-1-1.html");
+
+    $(".cp7-1_btn1").click(function() {
+      $(".cp_content").load("files/cp7-1-1.html");
+    });
+    $(".cp7-1_btn2").click(function() {
+      $(".cp_content").load("files/cp7-1-2.html");
+    });
+    $(".cp7-1_btn3").click(function() {
+      $(".cp_content").load("files/cp7-1-3.html");
+    });
+  })
+</script>
+
 <div class="ui masthead vertical segment">
   <div class="ui container">
     <div class="introduction">
       <h1 class="ui header">必杀技部分</h1>
-      <p>首先来看必杀技部分，主要讲太鼓、优美、倒树
+      <p>首先来看必杀技部分，主要讲优美、太鼓、倒树
       </p>
+      <div class="ui buttons">
+        <button class="ui button cp7-1_btn1">优美</button>
+        <button class="ui button cp7-1_btn2">太鼓</button>
+        <button class="ui button cp7-1_btn3">倒树</button>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="main ui intro container">
-
- <!-- <div class="no example">
-    <h2 class="ui dividing header">Part1</h2>
-    <p>关于插动：当我们被压制时，有时候猜准敌人的套路缝隙选了插动，一定要接后续6A。如果你2A插成功之后连点（不是不可以，要看距离），很可能会因为距离不够后续体术打不到人，从而造成继续被敌人压制的局面：</p>
-    <p><img src="img/cp/cp6_1.gif" /></p>
-    <p>图中可以看到被压制方作出了错误的操作，他选择了2A连点而不是2A 6A。而压制方发现对方的习惯，果断选择了4A 6A打乱动！这是示范得非常好的正反面教材GIF。</p>
-  </div>
-
-  <div class="no example">
-    <h2 class="ui dividing header">Part2</h2>
-    <p>DA远端接236有缝隙，对策：</p>
-    <p><img src="img/cp/cp6_2.gif" /></p>
-  </div>-->
+<div id="cp7-1_content" class="main ui intro container">
+  
 
 </div>

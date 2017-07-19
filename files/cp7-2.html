@@ -1,13 +1,33 @@
+<script>
+  $(function() {
+
+    $("#cp7-2_content").load("files/cp7-2-1.html");
+
+    $(".cp7-2_btn").click(function() {
+      var loc = "";
+      loc = $(this).attr("loc");
+      $(".cp_content").load(loc);
+    });
+  })
+</script>
 <div class="ui masthead vertical segment">
   <div class="ui container">
     <div class="introduction">
       <h1 class="ui header">SC部分</h1>
       <p>SC压制部分我们讲1卡风圈、2卡开风 、2卡天狗报、3卡红叶、4卡人间、5卡风靡，它们的用法</p>
+      <div class="ui buttons">
+        <button class="ui button cp7-2_btn" loc="files/cp7-2-1.html">1卡风圈</button>
+        <button class="ui button cp7-2_btn" loc="files/cp7-2-2.html">2卡开风</button>
+        <button class="ui button cp7-2_btn" loc="files/cp7-2-3.html">2卡天狗报</button>
+        <button class="ui button cp7-2_btn" loc="files/cp7-2-4.html">3卡红叶</button>
+        <button class="ui button cp7-2_btn" loc="files/cp7-2-5.html">4卡人间</button>
+        <button class="ui button cp7-2_btn" loc="files/cp7-2-6.html">5卡风靡</button>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="main ui intro container">
+<div id="cp7-2_content" class="main ui intro container">
 
   <!-- <div class="no example">
     <h2 class="ui dividing header">Part1</h2>
